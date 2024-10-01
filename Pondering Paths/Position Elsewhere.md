@@ -17,7 +17,7 @@ Here is your flag:
 pwn.college{os35J5iSCxxZ-lQo4qvoT1LLn7x.ddDN1QDL0kzN0czW}
 ```
 
-#learnings
+# learnings
 to explore directories in the system
 to execute the given program from a specified directory
 learnt how to see the path from which the program was supposed to be executed,by the line "you are..."
