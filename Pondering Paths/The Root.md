@@ -9,5 +9,5 @@ hacker@paths~the-root:~$
 ```
 
 # learnings
-to be familiar with the mapping of absolute path to directories
-file system starts with /
+- to be familiar with the mapping of absolute path to directories
+- file system starts with /
