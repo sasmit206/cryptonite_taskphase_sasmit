@@ -179,3 +179,14 @@ hacker@paths~implicit-relative-path:/challenge$
 ## learnings
 - how to execute a program within a given directory
 - use '.' to specify that we have to execute it in the directory in which we are present.
+
+# home sweet home
+## code
+Connected!
+hacker@paths~home-sweet-home:~$ /challenge/run ~/h
+Writing the file to /home/hacker/h!
+... and reading it back to you:
+pwn.college{oug6QqrA2awBG2TkK0ycmv-8KED.dNzM4QDL0kzN0czW}
+
+## learning 
+the specified program was created after creation of a new file 'h'
