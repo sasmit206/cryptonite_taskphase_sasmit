@@ -1,4 +1,4 @@
-# intro to commands
+# i) intro to commands
 ## code
 ```bash
 Connected!
@@ -8,7 +8,7 @@ pwn.college{oNTQhwLavbWTR0actrNe4w2deub.ddjNyUDL0kzN0czW}
 hacker@hello~intro-to-commands:~$ 
 ```
 
-# intro to arguments
+# ii) intro to arguments
 ## code 
 
 ```bash
