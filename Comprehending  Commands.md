@@ -366,7 +366,7 @@ pwn.college{wwvsTroinvLWZ9r08a6rNLtpTWv.dlTM1UDL0kzN0czW}
 hacker@commands~linking-files:/$ 
 ```
 ## learnings
-this one was pretty intresting. i first thought of a way to maybe locate the places where /flag was present by using find function .
+this one was pretty intresting. i first thought of a way to maybe locate the places where /flag was present by using find function.
 However, I later realised that ln -s could be simply used to establish a symbolic link of /home/hacker/not-the-flag to /flag. this was done as upon entering /challenge/catflag, /home/hacker/not-the-flag was being read out.
 
 
