@@ -12,6 +12,16 @@ hacker@paths~the-root:~$
 ## learnings
 - to be familiar with the mapping of absolute path to directories
 - file system starts with /
+# Program And Paths
+## code
+Connected!                                                                        
+hacker@paths~program-and-absolute-paths:~$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path! Here is your flag:
+pwn.college{U5G3Z-BWg3UzffNvwgXTd_6-XkR.dVDN1QDL0kzN0czW}
+hacker@paths~program-and-absolute-paths:~$ 
+## learning
+to run a program within a specified directory using absoulte path
 
 # Position Thy Self
 ## code
