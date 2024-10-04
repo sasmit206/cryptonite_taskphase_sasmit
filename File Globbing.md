@@ -63,11 +63,38 @@ pwn.college{cpvFiCH7gM19XhEnhQZ0KRhnDGN.dRjM4QDL0kzN0czW}
 hacker@globbing~matching-paths-with-:~$ 
 ```
 ## learnings
-this one was a bit tricky.learnt how to execute a a program in a directory using the absoulte path along with usage of [] brackets.
+learnt how to execute a a program in a directory using the absoulte path along with usage of [] brackets.
 
-# mixing globs
+# excluding globs
 ## code
 ```bash
-
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run file_[!pwn]
+Error: your argument is too long! It must be 8 characters or less.
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]
+Your expansion did not expand to the requested files (amazing beautiful 
+challenging delightful educational fantastic great happy incredible jovial kind 
+laughing magical optimistic queenly radiant splendid thrilling uplifting 
+victorious xenial youthful zesty).
+Instead, it expanded to:
+[!pwn]
+hacker@globbing~exclusionary-globbing:/challenge/files$ ls -a
+.        beautiful    educational  happy       kind      nice        queenly   thrilling   wonderful  zesty
+..       challenging  fantastic    incredible  laughing  optimistic  radiant   uplifting   xenial
+amazing  delightful   great        jovial      magical   pwning      splendid  victorious  youthful
+hacker@globbing~exclusionary-globbing:/challenge/files$ echo Look: file_[!pwn]
+Look: file_[!pwn]
+hacker@globbing~exclusionary-globbing:/challenge/files$ /chalenge/run f*_[!pwn]
+ssh-entrypoint: /chalenge/run: No such file or directory
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run f*_[!pwn]
+Error: your argument is too long! It must be 8 characters or less.
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{MGFVlaYvC9qKVR4L6WRp0_DFM5Z.dZjM4QDL0kzN0czW}
+hacker@globbing~exclusionary-globbing:/challenge/files$ 
 ```
 ## learnings
+was a bit tricky, had to figure out a way to pass the argument without using 'file_'
+also had to keep in mind to put * after [!pwn]. 
+
+#
