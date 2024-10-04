@@ -36,7 +36,7 @@ pwn.college{go5u2tMnq7Tdhi1xSNlPPZcN9F4.ddTM4QDL0kzN0czW}
 ## learnings
 to search for a specified text in a given file using 'grep command
 ```
-#listing files
+# listing files
 ## code
 ```bash
 hacker@commands~listing-files:~$ ls /challenge
