@@ -300,4 +300,21 @@ hacker@piping~duplicating-piped-data-with-tee:~$
 ## learning
 learnt how to debug the console using tee operator. its essentialfunction is to list the reason as to why the piping of first command into the second one is non executable and stroing it in cm1_o. listed contents of cm1_o to find the secret argument to be passed
 
+# writing to multiple programs
+## code
+```bash
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee (/challenge/th)e |  /challenge/planet
+ssh-entrypoint: syntax error near unexpected token `/challenge/th'
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee (/challenge/the) |  /challenge/planet
+ssh-entrypoint: syntax error near unexpected token `/challenge/the'
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee >(/challenge/the) |  /challenge/planet
+Congratulations, you have duplicated data into the input of two programs! Here 
+is your flag:
+pwn.college{ETlLBfh1tuOXvXxUHzGbj10WGib.dBDO0UDL0kzN0czW}
+hacker@piping~writing-to-multiple-programs:~$
+```
+## learning
+how to pass output of a file as an input to another file using >() 
+
+# 
 
