@@ -316,5 +316,15 @@ hacker@piping~writing-to-multiple-programs:~$
 ## learning
 how to pass output of a file as an input to another file using >() 
 
-# 
+# split piping stderr and stdout
+## code
+```bash
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >(/challenge/planet) 2> >(/challenge/the)
+Congratulations, you have learned a redirection technique that even experts 
+struggle with! Here is your flag:
+pwn.college{A16ghxbL5DyNEwTYCZdMoaZlygU.dFDNwYDL0kzN0czW}
+hacker@piping~split-piping-stderr-and-stdout:~$ 
+```
+## learning
+passed the output of /challenge/hack as the input to /challlenge/planet. Further, passed the stderr (ie errors) of /challenge/hack into the /challenge/the file.
 
