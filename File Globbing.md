@@ -17,6 +17,7 @@ hacker@globbing~matching-with-:/challenge$
 ## learnings
 learnt to use * glob
 
+
 # Matching with ?
 ## code
 ```bash
@@ -31,6 +32,7 @@ pwn.college{AtL3E6j4YpLITOOUkOBCwmwvltN.dJjM4QDL0kzN0czW}
 ## learnings
 learnt to use ? glob and how it maps only a single character
 
+
 # matching with []
 ## code
 ```bash
@@ -43,6 +45,7 @@ hacker@globbing~matching-with-:/challenge/files$
 ```
 ## learnings
 learnt how to match multiple characters using [] brackets
+
 
 # matching paths with []
 ## code
@@ -64,6 +67,21 @@ hacker@globbing~matching-paths-with-:~$
 ```
 ## learnings
 learnt how to execute a a program in a directory using the absoulte path along with usage of [] brackets.
+
+
+# mixing globs
+## code
+```bash
+Connected!                                                                        
+hacker@globbing~mixing-globs:~$ cd /challenge/files
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [cep]*
+You got it! Here is your flag!
+pwn.college{ot-s3j42YjrxCGWMXTxiRp7K9qh.dVjM4QDL0kzN0czW}
+hacker@globbing~mixing-globs:/challenge/files$ 
+```
+## learnings
+this one took me the longest for some peculiar reason. although extremely trivial, it made me understand as to how only the three words were the ones starting with letters 'c' , 'e' or 'p'.
+
 
 # excluding globs
 ## code
@@ -96,5 +114,3 @@ hacker@globbing~exclusionary-globbing:/challenge/files$
 ## learnings
 was a bit tricky, had to figure out a way to pass the argument without using 'file_'
 also had to keep in mind to put * after [!pwn]. 
-
-#
