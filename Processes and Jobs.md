@@ -1,3 +1,4 @@
+# listing processes
 ## code
 ```bash
 hacker@processes~listing-processes:~$ ps aux
@@ -17,6 +18,7 @@ Now I will sleep for a while (so that you could find me with 'ps').
 ## learnings
 learnt how to use ps aux command and list running processes
 
+# killing processes
 ## code
 ```bash
 hacker@processes~killing-processes:~$ ps -e | grep sleep
@@ -30,6 +32,7 @@ hacker@processes~killing-processes:~$
 ## learnings
 combined pre-known knowledge of pipe operator to find out of ps -e and passed it as input in order to grep for 'sleep'. Thus killed the process by identifying by its PID, Finally executed /challenge/run
 
+# interuppting processes
 ## code
 ```bash
 hacker@processes~interrupting-processes:~$ /challenge/run
@@ -42,6 +45,7 @@ pwn.college{Ua10ElWASxSFfCgjt3oKa4ATeb2.dNDN4QDL0kzN0czW}
 ## learnings
 learnt how to interrupt a command
 
+# suspending processes
 ## code
 ```bash
 hacker@processes~suspending-processes:~$ /challenge/run
@@ -74,6 +78,7 @@ pwn.college{g25Wcxu1t59qnadjsJOC5Y0e4yM.dVDN4QDL0kzN0czW}
 ## learnings
 leanrnt how to suspend a command; execute it's copy while the first one is suspended in the background
 
+# resuming processes
 ## code
 ```bash
 hacker@processes~resuming-processes:~$ /challenge/run
@@ -89,6 +94,7 @@ pwn.college{QbKxA1RfTnzgtit8pDbcxC2GWYh.dZDN4QDL0kzN0czW}
 ## learnings
 learnt how to resume a command after having paused it with ctrl+z
 
+# backgrounding processes
 ## code
 ```bash
 hacker@processes~backgrounding-processes:~$ /challenge/run
@@ -131,6 +137,7 @@ pwn.college{wRIb-pwvD5X11VcyjaT-dQ6w8UN.ddDN4QDL0kzN0czW}
 ## learnings
 learnt how to carry out execution of command in background while it's copy will also be executed
 
+# foregrounding processes
 ## code
 ```bash
 hacker@processes~foregrounding-processes:~$ /challenge/run
@@ -159,6 +166,7 @@ pwn.college{cHk37DYcrlW2lxVG7QIG-dK3k_q.dhDN4QDL0kzN0czW}
 ## learnings
 learnt how to foreground a task after having once put it in the background
 
+# starting backgrounded processes
 ## code
 ```bash
 hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
@@ -176,4 +184,14 @@ pwn.college{A2w_Mrid5bz0DinJMEUkqzYQVW3.dlDN4QDL0kzN0czW}
 ## learnings
 learnt how tostart of a process in background without having to pause it using ctrl+z
 
+# process exit codes
 ## code
+hacker@processes~process-exit-codes:~$ /challenge/get-code
+Exiting with an error code!
+hacker@processes~process-exit-codes:~$ echo $?
+138
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 138
+CORRECT! Here is your flag:
+pwn.college{IEjmL6kh3ddKbx1uHazrLN_2TdI.dljN4UDL0kzN0czW}
+## learnings
+learnt how to fetch exit code after execution of a command in order to check it's functionality.
